@@ -1,0 +1,74 @@
+body, html{
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #282a36;
+  color: #f8f8f2;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  place-items: center;
+}
+header{
+  text-align: center;
+}
+.image{
+  display:none;
+  width: 800px;
+  box-shadow: 0 0.2em 1em #bd93f9;
+  border-radius: 1em;
+}
+.image.show{
+  display:grid;
+}
+.container{
+  display: grid;
+  grid-template-columns: auto 1fr auto  ;
+  position: relative;
+}
+.container button{
+  border:0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #f8f8f2;
+  font-size: 2.5em;
+  font-weight: 900;
+  position: absolute;
+}
+.pre{
+  top:0;
+  bottom:0;
+}
+.next{
+  left:1;
+  right:0;
+  top: 0;
+  bottom:0;
+}
+.circle-wrapper{
+  height: 16px;
+  width: max-content;
+  position: absolute;
+  left:0;
+  right:0;
+  top:1;
+  bottom:16px;
+  margin:auto;
+}
+.circle{
+  width: 16px;
+}
+.circle.active{
+  content: url(img/circle-pink.png)
+}
+button:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+button{
+  border-radius: 1em;
+
+}
